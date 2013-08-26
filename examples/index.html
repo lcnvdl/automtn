@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <h1>Automtn Example</h1>
+		<h3>Required</h3>
+		<code>
+			<i>When we fetch data?</i><br/>
+			data-events="document-ready"<br/><br/>
+			
+			<i>Where?</i><br/>
+			data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar"<br/>
+			
+			<br/>
+		</code>
+		
+		<h3>Optional <small>(we have more, see docs)</small></h3>
+		<code>
+			data-method="GET"<br/>
+			data-loaderror="$('#loading').html('Error: '+args.error);"<br/>
+			data-loadsuccess="$('#loading').remove();"<br/>
+			<br/>
+		</code>
+		
+		
+		<h3>Example</h3>
+		<div id="loading">
+			<img src="img/ajax-loader.gif" alt='Loading...' />
+		</div>
+				
+		<table
+			data-method="GET"
+			data-events="document-ready"
+			data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
+			data-loaderror="$('#loading').html('Error: '+args.error);"
+			data-loadsuccess="$('#loading').remove();"
+			>
+		</table>		
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="../lib/automtn.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
