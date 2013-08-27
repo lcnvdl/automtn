@@ -10,11 +10,50 @@ Automtn is a jQuery plugin for get data (using ajax) and insert data into DOM el
 
 ## Quick Start
 
-Coming soon...
+### Installation
+Include automtn.js
+
+```
+<script src="js/automtn.js"></script>
+```
+
+### Usage
+
+We have two options:
+
+HTML:
+
+```
+//  In this example, we loads a json file into a table when document is ready.
+
+<table 
+    data-events="document-ready"
+    data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar"
+    >
+</table>
+```
+
+Or JS:
+
+```
+//  In this example, we loads a json file into a table when document is ready.
+
+<script>
+
+    $("#tableData").automtn({
+        events: "document-ready",
+        fetch: "http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar"
+    });
+    
+</script>
+
+<table id="tableData">
+</table>
+```
 
 ## Doc
 
-Coming soon...
+See [API](https://github.com/lcnvdl/automtn/blob/master/doc/api/index.html).
 
 ## Contributing
 
