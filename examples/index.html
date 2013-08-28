@@ -13,44 +13,102 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+        <!-- Fork me -->
+        <a href="https://github.com/lcnvdl" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+    
 
+        <!-- Example description -->
+        
         <h1>Automtn Example</h1>
-	<h3>Required</h3>
-	<code>
-		<i>When we fetch data?</i><br/>
-		data-events="document-ready"<br/><br/>
-		
-		<i>Where?</i><br/>
-		data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar"<br/>
-		
-		<br/>
-	</code>
-	
-	<h3>Optional <small>(we have more, see docs)</small></h3>
-	<code>
-		data-method="GET"<br/>
-		data-loaderror="$('#loading').html('Error: '+args.error);"<br/>
-		data-loadsuccess="$('#loading').remove();"<br/>
-		<br/>
-	</code>
-	
-	
-	<h3>Example</h3>
-	<div id="loading">
-		<img src="img/ajax-loader.gif" alt='Loading...' />
-	</div>
-			
-	<table
-		data-method="GET"
-		data-events="document-ready"
-		data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
-		data-loaderror="$('#loading').html('Error: '+args.error);"
-		data-loadsuccess="$('#loading').remove();"
-		>
-	</table>
-	
+        <h3>Required</h3>
+        <code>
+            <i>When we fetch data?</i><br/>
+            data-events="document-ready"<br/><br/>
+        
+            <i>Where?</i><br/>
+            data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar"<br/>
+        
+            <br/>
+        </code>
+    
+        <h3>Optional <small>(we have more, see docs)</small></h3>
+        <code>
+            data-method="GET"<br/>
+            data-loaderror="$('#loading').html('Error: '+args.error);"<br/>
+            data-loadsuccess="$('#loading').remove();"<br/>
+            <br/>
+        </code>
+    
+        <!-- Examples -->
+        
+        <h3>Examples</h3>
+        
+        <!-- Example 1 -->
+        
+        <h4>Table</h4>
+        
+        <div id="loading-1">
+            <img src="img/ajax-loader.gif" alt='Loading...' />
+        </div>
+            
+        <table
+            data-method="GET"
+            data-events="document-ready"
+            data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
+            data-loaderror="$('#loading-1').html('Error: '+args.error);"
+            data-loadsuccess="$('#loading-1').remove();"
+            >
+        </table>
+        
+        <!-- Example 2 -->
+            
+        <h4>List</h4>
+        
+        <div id="loading-2">
+            <img src="img/ajax-loader.gif" alt='Loading...' />
+        </div>
+        
+        <ul
+            data-method="GET"
+            data-events="document-ready"
+            data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
+            data-loaderror="$('#loading-2').html('Error: '+args.error);"
+            data-loadsuccess="$('#loading-2').remove();"
+            >
+        </ul>
+            
+        <!-- Example 3 -->
+        
+        <h4>Custom DIV</h4>
+        
+        <div id="loading-3">
+            <img src="img/ajax-loader.gif" alt='Loading...' />
+        </div>
+        
+        <div
+            data-method="GET"
+            data-events="document-ready"
+            data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
+            data-loaderror="$('#loading-3').html('Error: '+args.error);"
+            data-loadsuccess="$('#loading-3').remove();"
+            data-tpl="<i>Custom value {value}</i><br/>"
+            >
+        </div>
+        
+        <br/>
+        
+        <!-- Footer -->
+        
+        <h3>Project</h3>
+        
+        <p>Project link: <a href="https://github.com/lcnvdl/automtn" target="_blank">https://github.com/lcnvdl/automtn</a></p>
+        
+        <p>Thanks!</p>
+    
+        <!-- Scripts -->
+    
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
-	<script src="../lib/automtn.js"></script>
+        <script src="../lib/automtn.js"></script>
 
         <script src="js/main.js"></script>
     </body>

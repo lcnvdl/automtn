@@ -61,19 +61,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
 
+code i {
+    color:#090;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+td {
+    
+    border: solid 1px #ccc;
+}
 
 /* ==========================================================================
    Media Queries
