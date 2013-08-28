@@ -51,6 +51,54 @@ Or JS:
 </table>
 ```
 
+## Limitations
+
+This works perfectly:
+
+```
+
+{
+    "keyOne": "abc",
+    "keyTwo": "jkl",
+    ...
+}
+
+or
+
+{
+    "keyOne": ["abc", "def", "ghi"],
+    "keyTwo": ["jkl", "mno", "pqr"],
+    ...
+}
+
+```
+
+But we have problems with:
+
+```
+
+{
+    "keyOne": {
+        "subKey": ["abc", "def"]
+    }
+}
+
+or
+
+{
+    "keyOne": {
+        "subKey": {
+            "abc", "def"
+        }
+    }
+}
+
+or much more...
+
+```
+
+This is because Automtn don't works with data recursively (for now).
+
 ## Doc
 
 See [API](https://github.com/lcnvdl/automtn/blob/master/doc/api/index.html).

@@ -33,7 +33,6 @@
     
         <h3>Optional <small>(we have more, see docs)</small></h3>
         <code>
-            data-method="GET"<br/>
             data-loaderror="$('#loading').html('Error: '+args.error);"<br/>
             data-loadsuccess="$('#loading').remove();"<br/>
             <br/>
@@ -52,7 +51,6 @@
         </div>
             
         <table
-            data-method="GET"
             data-events="document-ready"
             data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
             data-loaderror="$('#loading-1').html('Error: '+args.error);"
@@ -69,7 +67,6 @@
         </div>
         
         <ul
-            data-method="GET"
             data-events="document-ready"
             data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
             data-loaderror="$('#loading-2').html('Error: '+args.error);"
@@ -86,7 +83,6 @@
         </div>
         
         <div
-            data-method="GET"
             data-events="document-ready"
             data-fetch="http://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires,ar" 
             data-loaderror="$('#loading-3').html('Error: '+args.error);"
@@ -111,5 +107,11 @@
         <script src="../lib/automtn.js"></script>
 
         <script src="js/main.js"></script>
+        <script>
+            //  Options Override
+            Automtn.defaults.method="GET";
+            Automtn.defaults.external=true;
+        </script>
+        
     </body>
 </html>
