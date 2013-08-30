@@ -24,7 +24,7 @@ We have two options:
 HTML:
 
 ```
-//  In this example, we loads a json file into a table when document is ready.
+//  In this example, we load a json file into a table when document is ready.
 
 <table 
     data-events="document-ready"
@@ -36,7 +36,7 @@ HTML:
 Or JS:
 
 ```
-//  In this example, we loads a json file into a table when document is ready.
+//  In this example, we load a json file into a table when document is ready.
 
 <script>
 
@@ -110,5 +110,6 @@ This is because Automtn don't works with data recursively (for now).
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
 
 © 2013 Lcnvdl.
