@@ -19,7 +19,7 @@ Include automtn.js
 
 ### Usage
 
-We have two options:
+You have two options:
 
 HTML:
 
@@ -113,3 +113,5 @@ This is because Automtn don't works with data recursively (for now).
 
 
 © 2013 Lcnvdl.
+
+http://lucianorasente.com
